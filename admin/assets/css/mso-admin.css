@@ -1,0 +1,1268 @@
+h2.mso_carrier_title, .mso_order_shipment {
+    /*border: 1px solid #777;*/
+    color: black;
+    cursor: pointer;
+    padding: 18px !important;
+    text-align: left;
+    outline: none;
+    font-size: 15px !important;
+    cursor: pointer;
+    /* Dropdown */
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 19px) calc(1em + 10px), calc(100% - 15px) calc(1em + 10px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 2.5em;
+    background-repeat: no-repeat;
+    border: 1px solid #2271B0;
+    border-left-width: 3px;
+    margin-bottom: 10px !important;
+    font-weight: 600 !important;
+}
+
+.mso_shipping_product_data {
+    margin: 16px 10px 0 10px !important;
+}
+
+.mso_shipping_product_data + p label {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.mso_shipping_rates_block {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.mso_order_tab {
+    display: none;
+    clear: both;
+}
+
+table.mso_api_response_table summary {
+    cursor: pointer;
+}
+
+table.mso_api_response_table {
+    width: 100%;
+}
+
+.mso_order_shipment_number {
+    display: inline list-item;
+    font-size: 14px;
+    font-weight: 600;
+    border: 0.1em solid #2271B0;
+    border-radius: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #2271b1;
+    color: white;
+}
+
+div.mso_order_ship_action {
+    position: absolute;
+    /*margin: 1.5% 0 0 1%;*/
+    margin: 20px 0 0 15px;
+}
+
+table.mso_order_packages_tip {
+    text-align: left;
+}
+
+table.mso_order_packages_tip td {
+    padding: 10px;
+}
+
+span.mso_shipment_num_text {
+    margin-left: 40%;
+    margin-right: 10px;
+    font-size: small;
+    font-weight: 600;
+    color: #2271b1;
+}
+
+/* Order tabs */
+div.mso_order_main_tab {
+    /*margin-right: 30px;*/
+    /*margin-top: 18px;*/
+}
+
+.mso_order_api_response h2.mso_carrier_name {
+    background-color: #007cba;
+    color: white;
+}
+
+.mso_order_api_response h2.mso_carrier_name .mso_rcn {
+    /*height: 60px;*/
+    /*line-height: 60px;*/
+    /*width: 60px;*/
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    background: #fff;
+    border-color: #fff;
+    color: #2271b1;
+    text-decoration: none;
+    text-shadow: none;
+    padding: 5px;
+}
+
+.mso_order_main_tab ol > li {
+    display: table-cell;
+    height: 30px;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    color: #2271b1;
+    background: #f6f7f7;
+    border: 1px solid #2271b1;
+}
+
+.mso_order_main_tab ol > li > div {
+    position: relative;
+    line-height: 30px; /* equal to the list item's height */
+    height: 100%;
+    width: 100%;
+}
+
+li.mso_order_tab_active,
+.mso_order_main_tab ol > li:hover {
+    background-color: #2271b1 !important;
+    cursor: pointer;
+    color: white !important;
+}
+
+.mso_order_main_tab ol {
+    display: table;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+.mso_order_main_tab li.mso_order_tab_active > div:after,
+.mso_order_main_tab li.mso_order_tab_active > div:before,
+.mso_order_main_tab ol > li > div:after,
+.mso_order_main_tab ol > li > div:before {
+    /*content: "";*/
+    display: inline-block;
+    border-width: 16px;
+    border-style: solid;
+    width: 0px;
+    height: 0px;
+    /*left: 100%;*/
+    /*top: -1px;*/
+    /*position: absolute;*/
+    /*z-index: 1;*/
+}
+
+.mso_order_main_tab ol > li > div:after,
+.mso_order_main_tab ol > li:hover > div:before {
+    border-color: transparent transparent transparent #2271b1;
+}
+
+.mso_order_main_tab ol > li > div:before {
+    border-width: 14px;
+    display: block;
+    border-color: transparent transparent transparent #f6f7f7;
+    z-index: 2;
+    top: 1px;
+}
+
+.mso_order_label_rotated_90 {
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -moz-transform: rotate(90deg); /* Firefox */
+    -webkit-transform: rotate(90deg); /* Safari and Chrome */
+    -o-transform: rotate(90deg); /* Opera */
+    margin-top: 127px;
+}
+
+.mso_order_shipments_labels {
+    clear: both;
+}
+
+.mso_order_shipments_labels .mso_ship_label_content .mso_real_pdf_image {
+    height: 20%;
+    width: 10%;
+}
+
+.mso_order_shipments_labels .mso_ship_label_content .mso_real_label_image {
+    width: 20%;
+    margin-right: 10px;
+}
+
+.mso_order_shipments_labels .mso_ship_label_content embed {
+    height: 30%;
+    width: 15%;
+}
+
+#order_shipping_line_items .shipping .view .display_meta {
+    display: none;
+}
+
+/*h2.mso_carrier_title ~ table.form-table {*/
+/*    margin-left: 15px;*/
+/*}*/
+
+label[for=mso_api_test_mode] + p.description,
+label[for=mso_no_shipping_cost_enable] + p.description {
+    float: right;
+}
+
+tr.mso_child_carrier {
+    display: block;
+}
+
+tr.mso_child_carrier th,
+tr.mso_carrier_partition th {
+    padding: 0px 0 10px 15px;
+    /*margin-left: 10px;*/
+    font-weight: 400;
+}
+
+/*label[for=mso_free_shipping_option_custom_rate_label] .woocommerce-help-tip,*/
+/*label[for=mso_free_shipping_option_custom_rate_cost] .woocommerce-help-tip,*/
+tr.mso_carrier_partition th .woocommerce-help-tip,
+tr.mso_no_shipping_option_custom_rate th .woocommerce-help-tip {
+    margin: 7px -34px 0 0 !important;
+}
+
+label[for=mso_free_shipping_option_cart_total] .woocommerce-help-tip,
+label[for=mso_free_shipping_option_weight_threshold] .woocommerce-help-tip {
+    margin: 0 -34px 0 0 !important;
+}
+
+tr.mso_child_carrier td,
+tr.mso_carrier_partition td {
+    padding: 0px 0 10px 15px;
+}
+
+.mso_error {
+    color: #ff0000;
+    font-size: 13px;
+    font-weight: normal !important;
+}
+
+tr.mso_tr_order_shipment_origin,
+tr.mso_order_destination {
+    display: grid;
+}
+
+tr.mso_tr_order_shipment_origin td,
+tr.mso_order_destination td {
+    padding-left: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+tr.mso_order_destination td p {
+    border: 1px solid;
+    width: 53%;
+    min-height: 30px;
+    background-color: #D3D3D3;
+    padding: 8px 0 0 10px;
+}
+
+.mso_tr_order_shipment_origin td,
+.mso_order_destination td {
+    padding-top: 0px;
+}
+
+.mso_tr_order_shipment_origin td {
+    padding-top: 5px;
+}
+
+tr.mso_itmes_heading th, tr.mso_itmes_heading td,
+tr.mso_accessorials_heading th, tr.mso_accessorials_heading td,
+tr.mso_ship_options_heading th, tr.mso_ship_options_heading td {
+    padding-bottom: 5px;
+}
+
+div.mso_order_accessorials {
+    margin-bottom: 20px;
+}
+
+div.mso_order_accessorials table:nth-child(2) {
+    margin-top: 0px;
+}
+
+div.mso_order_accessorials table:nth-child(2) tbody {
+    display: flex;
+    background-color: #D3D3D3;
+}
+
+div.mso_order_accessorials table:nth-child(2) tr th {
+    padding-left: 5px !important;
+}
+
+tr.mso_order_accessorial th {
+    width: auto;
+}
+
+tr.mso_order_accessorial td {
+    padding: 0 20px 6px 5px !important;
+}
+
+ul.mso_items_sortable {
+    width: 70% !important;
+}
+
+/*.mso_tr_order_shipment_origin {*/
+/*    position: absolute;*/
+/*    left: 70px;*/
+/*}*/
+
+.mso_asteric th label:after {
+    content: " *";
+    color: red;
+}
+
+.mso_api_credentials_status_btn {
+    text-align: center;
+}
+
+tr.mso_api_credentials_status_tr,
+tr.mso_carrier_settings_on_off_tr {
+    display: block;
+}
+
+tr.mso_api_credentials_status_tr th {
+    width: auto !important;
+}
+
+tr.mso_license_api_status {
+    /*float: right;*/
+    margin-right: 50%;
+    padding-top: 0px !important;
+    /*padding-bottom: 20px;*/
+}
+
+tr.mso_license_api_status th {
+    display: ruby-base;
+}
+
+/*tr.mso_license_api_status th button {*/
+/*    margin-left: 12px !important;*/
+/*}*/
+
+tr.mso_api_credentials_status_tr {
+    padding-top: 12px;
+}
+
+/*tr.mso_license_api_status td {*/
+/*    position: absolute;*/
+/*}*/
+
+/* Location on product page */
+.mso_product_locations_field span.description {
+    font-weight: 600;
+    font-size: 14px;
+    font-style: normal;
+    background: #007cba;
+    border-color: #007cba;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+    padding: 23px;
+    cursor: pointer;
+    float: left;
+}
+
+.mso_logs_overly,
+.mso_popup_location_overly,
+.mso_location_delete_warning_overly,
+.mso_packaging_delete_warning_overly,
+.mso_order_shipment_file_to_show_overly,
+.mso_order_shipment_delete_warning_overly,
+.mso_order_item_delete_warning_overly {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    opacity: 0;
+    z-index: 9999;
+}
+
+.mso_label_popup_action {
+    /*position: fixed;*/
+    /*z-index: 9999;*/
+    /*top: 6.3%;*/
+    /*right: 11%;*/
+    background-color: #111;
+    /*overflow-x: hidden;*/
+    /*height: 86%;*/
+    /*width: 10%;*/
+    display: flex;
+    float: left;
+    padding: 1px;
+    margin-bottom: 15px;
+}
+
+.mso_label_popup_action a {
+    padding: 6px 16px 6px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    display: block;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.mso_label_popup_action a:hover {
+    color: #f1f1f1;
+}
+
+.mso_location_delete_warning_overly .mso_popup_overly_template,
+.mso_packaging_delete_warning_overly .mso_popup_overly_template {
+    width: 20%;
+}
+
+td.mso_delete_packaging {
+    text-align: center;
+}
+
+.mso_location_delete_action input, .mso_package_delete_action input {
+    float: right;
+    margin: 5px !important;
+}
+
+.mso_popup_overly_template {
+    margin: auto;
+    margin: 3% auto;
+    width: 55%;
+    padding: 20px;
+    height: auto;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    transition: all 5s ease-in-out;
+    max-height: 80%;
+}
+
+.mso_popup_overly_template .mso_popup_overly_error .error {
+    margin: 0px !important;
+}
+
+.mso_popup_overly_template .mso_popup_overly_error {
+    margin-bottom: 15px;
+}
+
+.mso_input_red_border {
+    border-color: red !important;
+}
+
+.mso_popup_overly_template .close {
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.mso_cancel_shipment, .mso_print_all_shipment {
+    color: #2271b1;
+    cursor: pointer;
+    text-decoration: underline;
+    padding-right: 10px;
+    margin-bottom: 20px !important;
+}
+
+.mso_popup_overly_template .mso_button {
+    margin: 15px 0px 10px 0px;
+}
+
+select.mso_product_setting + span.description,
+select[name=mso_order_shipment_origin] + span.description {
+    /*background: #007cba;*/
+    /*border-color: #007cba;*/
+    /*color: #fff;*/
+    /*text-decoration: none;*/
+    /*text-shadow: none;*/
+    /*min-height: 32px;*/
+    /*line-height: 2.30769231;*/
+    /*padding: 0 12px;*/
+    /*text-align: center;*/
+    /*display: inline-block;*/
+    /*text-decoration: none;*/
+    /*font-size: 13px;*/
+    /*line-height: 2.15384615;*/
+    /*min-height: 30px;*/
+    /*margin: 0;*/
+    /*padding: 0 10px;*/
+    /*cursor: pointer;*/
+    /*border-width: 1px;*/
+    /*border-style: solid;*/
+    /*-webkit-appearance: none;*/
+    /*border-radius: 3px;*/
+    /*white-space: nowrap;*/
+    /*box-sizing: border-box;*/
+    /*margin-left: 10px;*/
+
+    color: #2271b1;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: 7px !important;
+}
+
+select[name=mso_order_shipment_origin] {
+    background-color: #D3D3D3;
+    width: 55%;
+    height: 40px;
+}
+
+.mso_popup_overly_template .mso_append_input {
+    margin-top: 5px;
+}
+
+tr.mso_order_child th {
+    padding: 0 0 10px 15px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+tr.mso_order_child td {
+    padding: 0 0 10px 15px;
+}
+
+tr.mso_hide th,
+tr.mso_carrier_id th,
+tr.mso_carrier_id td {
+    display: none;
+}
+
+#mso_order .mso_flex_template {
+    margin: 0px 15px 10px 15px;
+}
+
+#mso_order div.mso_order_items ul.mso_items_sortable li {
+    cursor: pointer;
+    padding: 10px;
+    border-color: #2271b1;
+    color: #2271b1;
+}
+
+#mso_order div.mso_order_items ul.mso_items_sortable {
+    min-height: 40px;
+    background-color: #D3D3D3;
+    padding: 10px 10px 5px 10px;
+    margin-top: 0px;
+}
+
+.mso_flex_template .form-table th {
+    padding: 0px !important;
+}
+
+tr.mso_itmes_heading th {
+    padding-bottom: 0px;
+}
+
+#mso_order div.mso_order_items ul.mso_items_sortable span.mso_item_arrow {
+    float: left;
+}
+
+#mso_order div.mso_order_items ul.mso_items_sortable span.mso_item_quantity {
+    position: relative;
+    bottom: 6px;
+}
+
+#mso_order .mso_shipment_remove,
+#mso_order div.mso_order_items ul.mso_items_sortable span.mso_item_quantity,
+#mso_order div.mso_order_items ul.mso_items_sortable span.mso_item_remove {
+    float: right;
+}
+
+#mso_order .mso_shipment_remove {
+    margin-right: 50px;
+}
+
+#mso_order div.mso_order_items ul.mso_items_sortable span.mso_item_quantity input[type=number] {
+    width: 60px;
+    margin-right: 15px;
+}
+
+.mso_order_link {
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+label[for=mso_order_rate] {
+    margin-left: 5px;
+    line-height: 2.5rem;
+    font-weight: 400;
+}
+
+button.mso_order_get_quote,
+button.mso_order_ship {
+    /*width: 45% !important;*/
+    float: right;
+}
+
+button.mso_order_ship {
+    margin-left: 10px !important;
+}
+
+.mso_rate_error_message {
+    color: #d02c29;
+}
+
+a.mso_order_recreate_shipment_allow {
+    cursor: pointer;
+}
+
+form.mso_popup_location_row {
+    padding-bottom: 5px;
+}
+
+.mso_tr_order_shipping_quotes td label {
+    margin: 4px 0px 0px 12px;
+}
+
+/* Settings page */
+tr.mso_carrier_partition td input[type="text"] {
+    width: 150% !important;
+}
+
+tr.mso_carrier_partition {
+    width: 32%;
+    display: inline-flex;
+}
+
+tr.mso_services_sa th {
+    font-weight: 500;
+}
+
+tr.mso_services_sa {
+    text-decoration: underline;
+}
+
+tr.mso_carrier_partition_64 {
+    width: 64%;
+    display: inline-flex;
+}
+
+input.hidden.mso_optional,
+input.hidden.mso_api_credentials_status {
+    display: none !important;
+}
+
+/*tr.mso_pk td input[type="text"] {*/
+/*    width: 100% !important;*/
+/*    font-size: 13px;*/
+/*}*/
+
+tr.mso_pk th label {
+    display: inline !important;
+    font-weight: 600;
+}
+
+tr.mso_pk th label {
+    font-weight: 600;
+}
+
+tr.mso_pk td {
+    float: left !important;
+    padding: 0px 0 10px 15px;
+}
+
+/* Order Css */
+.mso_order_lb {
+    float: left;
+    width: 48%;
+}
+
+.mso_order_rb {
+    float: right;
+    width: 48%;
+}
+
+div.mso_accessorials_items {
+    width: 100%;
+}
+
+div.mso_accessorials_items div.mso_order_items {
+    float: right;
+    width: 50%;
+}
+
+/*div.mso_accessorials_items div.mso_order_accessorials {*/
+/*    float: left;*/
+/*    width: 50%;*/
+/*}*/
+
+
+.woocommerce_variable_attributes select.mso_product_setting + span.description {
+    display: none;
+}
+
+.woocommerce_variable_attributes input.mso_enable_product_setting {
+    margin-left: 10px;
+}
+
+.mso_packaging_delete_warning_overly + .submit {
+    display: none;
+}
+
+div.mso_packaging_template .mso_packaging_post_meta {
+    background: none;
+    /*width: 1280px;*/
+}
+
+/*input.mso_add_packaging {*/
+/*    width: 50% !important;*/
+/*    float: right;*/
+/*    color: #2271b1 !important;*/
+/*    border-color: #2271b1 !important;*/
+/*    background: #f6f7f7 !important;*/
+/*    font-weight: bold !important;*/
+/*}*/
+
+/*input.mso_save_packaging {*/
+/*    width: 50% !important;*/
+/*}*/
+
+div.mso_packaging_template .mso_packaging_post_meta .mso_input {
+    padding-right: 0px !important;
+}
+
+/*.mso_packaging_submit_btn, .mso_packaging_td_row {*/
+/*    margin-top: 10px !important;*/
+/*}*/
+
+/*.mso_packaging_submit_btn {*/
+/*    background: none !important;*/
+/*    !*width: 1280px;*!*/
+/*}*/
+
+
+tr.mso_packaging_td_row td:first-of-type {
+    text-align: center;
+}
+
+.mso_packaging_submit_btn, .mso_location_submit_btn {
+    margin-top: 10px;
+}
+
+.mso_disabled {
+    /*pointer-events: none;*/
+    color: #AAA !important;
+    background: #F5F5F5 !important;
+}
+
+/*div.mso_box_available_th, div.mso_pallet_available_th,*/
+/*div.mso_box_available_td, div.mso_pallet_available_td {*/
+/*    text-align: center;*/
+/*}*/
+
+.mso_packaging_td_row td input[type=text],
+.mso_popup_location_row td input[type=text] {
+    width: 99%;
+}
+
+.mso_succ_status_description, .mso_err_status_description {
+    padding: 13px !important;
+    font-size: 13px !important;
+    width: 100% !important;
+    display: block;
+}
+
+tr.mso_carrier_plan_status th {
+    display: none;
+}
+
+tr.mso_carrier_plan_status td {
+    padding: 0px 0px 0px 0px;
+}
+
+.mso_pb_subs {
+    color: green;
+}
+
+.mso_box_weight {
+    /*margin-left: 10px !important;*/
+}
+
+.mso_rate_ship_btn {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+.mso_rate_ship_btn button {
+    margin-left: 10px !important;
+}
+
+.mso_hr {
+    height: 12px;
+    border: 0;
+    /*box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);*/
+    box-shadow: inset 0 12px 12px -12px #D3D3D3;
+    margin-top: 25px;
+}
+
+/*tr.mso_fedex_spq_domestic_services_sa,*/
+/*tr.mso_fedex_spq_international_services_sa,*/
+/*tr.mso_ups_spq_domestic_services_sa,*/
+/*tr.mso_ups_spq_international_services_sa {*/
+/*    display: block;*/
+/*}*/
+
+/*tr.mso_fedex_spq_domestic_services_sa td,*/
+/*tr.mso_fedex_spq_international_services_sa td,*/
+/*tr.mso_ups_spq_domestic_services_sa td,*/
+/*tr.mso_ups_spq_international_services_sa td {*/
+/*    padding-left: 18px;*/
+/*}*/
+
+/*Loader background*/
+.mso_roller_overly {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 2ms;
+    z-index: 9999999;
+    transition: all 0.2s ease-in-out
+}
+
+.mso_roller_overly:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*https://loading.io/css/*/
+.mso_roller {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mso_roller div {
+    animation: mso_roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+}
+
+.mso_roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -4px 0 0 -4px;
+}
+
+.mso_roller div:nth-child(1) {
+    animation-delay: -0.036s;
+}
+
+.mso_roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+}
+
+.mso_roller div:nth-child(2) {
+    animation-delay: -0.072s;
+}
+
+.mso_roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+}
+
+.mso_roller div:nth-child(3) {
+    animation-delay: -0.108s;
+}
+
+.mso_roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+}
+
+.mso_roller div:nth-child(4) {
+    animation-delay: -0.144s;
+}
+
+.mso_roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+}
+
+.mso_roller div:nth-child(5) {
+    animation-delay: -0.18s;
+}
+
+.mso_roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+}
+
+.mso_roller div:nth-child(6) {
+    animation-delay: -0.216s;
+}
+
+.mso_roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+}
+
+.mso_roller div:nth-child(7) {
+    animation-delay: -0.252s;
+}
+
+.mso_roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+}
+
+.mso_roller div:nth-child(8) {
+    animation-delay: -0.288s;
+}
+
+.mso_roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+}
+
+@keyframes mso_roller {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.mso_save_settings {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 20px;
+}
+
+.mso_save_settings .mso_rounded_btn {
+    height: 60px;
+    line-height: 60px;
+    width: 60px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    background: #2271b1;
+    border-color: #2271b1;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+/* Rounded checkbox */
+/*.mso_switch {*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    width: 60px;*/
+/*    height: 34px;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+.mso_switch {
+    /*padding: 0 30px 10px 0;*/
+    border: 1px dashed;
+    width: 10%;
+    padding: 10px;
+    text-align: center;
+}
+
+.mso_switch label {
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+.mso_switch input {
+    /*margin-top: 1px;*/
+}
+
+/*.mso_switch input {*/
+/*    opacity: 0;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*}*/
+
+/*.mso_slider {*/
+/*    position: absolute;*/
+/*    cursor: pointer;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    background-color: #ccc;*/
+/*    -webkit-transition: .4s;*/
+/*    transition: .4s;*/
+/*}*/
+
+/*.mso_slider {*/
+/*    position: absolute;*/
+/*    cursor: pointer;*/
+/*    top: 2px;*/
+/*    left: 1px;*/
+/*    right: 1px;*/
+/*    bottom: 2px;*/
+/*    background-color: #ccc;*/
+/*    -webkit-transition: .4s;*/
+/*    transition: .4s;*/
+/*}*/
+
+/*.mso_slider:before {*/
+/*    position: absolute;*/
+/*    content: "";*/
+/*    height: 26px;*/
+/*    width: 26px;*/
+/*    left: 4px;*/
+/*    bottom: 4px;*/
+/*    background-color: white;*/
+/*    -webkit-transition: .4s;*/
+/*    transition: .4s;*/
+/*}*/
+
+/*.mso_slider:before {*/
+/*    position: absolute;*/
+/*    content: "";*/
+/*    height: 26px;*/
+/*    width: 26px;*/
+/*    left: 2px;*/
+/*    bottom: 2px;*/
+/*    background-color: white;*/
+/*    -webkit-transition: .4s;*/
+/*    transition: .4s;*/
+/*}*/
+
+/*input:checked + .mso_slider {*/
+/*    background-color: #135e96;*/
+/*}*/
+
+/*input:focus + .mso_slider {*/
+/*    box-shadow: 0 0 1px #135e96;*/
+/*}*/
+
+/*input:checked + .mso_slider:before {*/
+/*    -webkit-transform: translateX(26px);*/
+/*    -ms-transform: translateX(26px);*/
+/*    transform: translateX(26px);*/
+/*}*/
+
+/* Rounded sliders */
+/*.mso_slider.mso_round {*/
+/*    border-radius: 34px;*/
+/*}*/
+
+/*.mso_slider.mso_round {*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*.mso_slider.mso_round:before {*/
+/*    border-radius: 50%;*/
+/*}*/
+
+.mso_implode_carrier {
+    font-weight: bold;
+    /*color: #2271b1;*/
+}
+
+tr.mso_origin_description th {
+    display: none;
+}
+
+span.mso_err_quoting_method {
+    width: 50% !important;
+}
+
+tr.mso_origin_description td {
+    padding-left: 0px !important;
+}
+
+tr.mso_shipping_settings_heading {
+    display: block;
+}
+
+tr.mso_shipping_settings_heading th {
+    width: auto !important;
+}
+
+tr.mso_origin_description td p.description {
+    color: black;
+    border: 2px solid #cc99c2;
+    border-left: 2mm ridge #cc99c2;
+    padding: 8px;
+}
+
+tr.mso_origin_description td p a {
+    text-underline-offset: 3px;
+}
+
+/* Logs tab */
+.mso_logs_table tbody {
+    background: #3498db;
+}
+
+.mso_logs_table th {
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    border: 1px solid #ccc;
+}
+
+.mso_logs_table td {
+    border: 1px solid #ccc;
+    font-size: 13px;
+}
+
+.mso_logs_table td li {
+    margin: 5px;
+}
+
+#mso_api_json_response {
+    padding: 20px;
+}
+
+a.mso_api_response_data {
+    cursor: pointer;
+}
+
+table.mso_logs_table ~ .submit {
+    display: none;
+}
+
+/* === Custom tooltip === */
+/* https://codepen.io/rudeayelo/pen/DWNyxg */
+.mso_order_wrapper .mso_tooltip,
+.mso_c_wrapper .mso_tooltip {
+    color: red !important;
+    background: white !important;
+}
+
+.mso_order_wrapper .mso_tooltip::after,
+.mso_c_wrapper .mso_tooltip::after {
+    border-top: solid red 10px !important;
+}
+
+.mso_order_wrapper:after {
+    background: red;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px !important;
+    margin: 1px;
+}
+
+.mso_wrapper:after {
+    font-family: Dashicons;
+    position: absolute;
+    top: 1px;
+    left: 3px;
+    content: "\f223";
+    line-height: 1;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.mso_wrapper {
+    /*clear: both;*/
+    position: relative;
+    padding-right: 20px;
+}
+
+.mso_c_wrapper {
+    position: relative;
+}
+
+.mso_c_wrapper span.mso_tooltip {
+    left: -124px;
+    margin-bottom: 30px;
+}
+
+span.mso_tooltip {
+    background: #2271b1;
+    bottom: 100%;
+    color: #fff;
+    display: block;
+    left: -100px;
+    margin-bottom: 15px;
+    opacity: 0;
+    padding: 15px;
+    pointer-events: none;
+    position: absolute;
+    width: 200px;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -ms-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+    -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+}
+
+/* This bridges the gap so you can mouse into the tooltip without it disappearing */
+span.mso_tooltip:before {
+    bottom: -20px;
+    content: " ";
+    display: block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+/* CSS Triangles - see Trevor's post */
+span.mso_tooltip:after {
+    border-left: solid transparent 10px;
+    border-right: solid transparent 10px;
+    border-top: solid #2271b1 10px;
+    bottom: -10px;
+    content: " ";
+    height: 0;
+    left: 50%;
+    margin-left: -13px;
+    position: absolute;
+    width: 0;
+}
+
+.mso_wrapper:hover .mso_tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+/* IE can just show/hide with no transition */
+.lte8 .mso_wrapper .mso_tooltip {
+    display: none;
+}
+
+.lte8 .mso_wrapper:hover .mso_tooltip {
+    display: block;
+}
